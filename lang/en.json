@@ -1,0 +1,23 @@
+{
+    "You're logged in!": "¡Ya has iniciado sesión!",
+    "Profile": "Perfil",
+    "Name": "Nombre",
+    "Save": "Guardar",
+    "Log in": "Iniciar sesión",
+    "Forgot your password?": "¿Olvidaste tu contraseña?",
+    "Remember me": "Recordar",
+    "Already registered?": "¿Ya estás registrado?",
+    "Log Out": "Finalizar la sesión",
+    "Delete Account": "Eliminar cuenta",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "Una vez que se elimine su cuenta, todos sus recursos y datos se eliminarán permanentemente. Antes de eliminar su cuenta, descargue cualquier dato o información que desee conservar.",
+    "Current Password": "Contraseña actual",
+    "New Password": "Nueva contraseña",
+    "These credentials do not match our records.": "Estas credenciales no coinciden con nuestros registros.",
+    "Confirm Password": "Confirmar Contraseña",
+    "Password": "Contraseña",
+    "Email": "Correo electrónico",
+    "Update Password": "Actualizar contraseña",
+    "Ensure your account is using a long, random password to stay secure.": "Asegúrese de que su cuenta utilice una contraseña larga y aleatoria para mantenerse segura.",
+    "Update your account's profile information and email address.": "Actualice la información del perfil y la dirección de correo electrónico de su cuenta.",
+    "Profile Information": "Información de perfil"
+}
