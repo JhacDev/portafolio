@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Freelancer - Portafolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> --}}
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/whatsapp.css">
     </head>
     <body id="page-top">
         <x-navigation-menu/>
@@ -22,7 +23,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="image/carnet.png" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">CODE - FUSION</h1>
                 <!-- Icon Divider-->
@@ -32,7 +33,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Desarrollo Apps - Diseñador Web - Desarrollo Aplicaciones</p>
+                <p class="masthead-subheading font-weight-light mb-0">Desarrollo Apps - Diseñador Web - Desarrollo de Aplicaciones</p>
             </div>
         </header>
 
@@ -187,5 +188,16 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         {{-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> --}}
+<!-- Agregar Bootstrap Icons (si no está incluido en el proyecto) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<a href="https://api.whatsapp.com/send?phone={{ env('WHATSAPP_NUMBER', '51973560162') }}&text={{ urlencode('Hola! Quisiera más información sobre el proyecto.') }}" 
+    class="float" 
+    target="_blank">
+    <i class="bi bi-whatsapp my-float"></i>
+</a>
+
+        
+        
     </body>
 </html>
