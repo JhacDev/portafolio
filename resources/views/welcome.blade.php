@@ -1,5 +1,12 @@
 @extends('layouts.template')
-
+@push('css')
+    <style>
+        .img-custom {
+        width: 20px;
+        height: auto; /* Mantiene la proporción */
+    }
+    </style>    
+@endpush
 @section('content')
     {{-- mostramos datos de prueba --}}
     @foreach ($proyectos as $proyecto)
@@ -33,7 +40,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{ $proyecto->imagen }}" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img-custom" src="{{ $proyecto->imagen }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">{{ $proyecto->descripcion }}</p>
                                     <a href="{{ $proyecto->url }}" class="btn btn-primary">

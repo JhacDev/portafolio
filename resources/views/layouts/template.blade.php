@@ -16,6 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/whatsapp.css">
+        @stack('css')
     </head>
     <body id="page-top">
         <x-navigation-menu/>
@@ -23,7 +24,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="image/carnet.png" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/Carnet.png" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">CODE - FUSION</h1>
                 <!-- Icon Divider-->
