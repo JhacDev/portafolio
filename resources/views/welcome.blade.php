@@ -13,6 +13,7 @@
                         </div>
                     </div>
                     <img class="img-fluid portfolio-image" src="{{ $proyecto->imagen }}" alt="..." />
+                    <h4 class="portfolio-modal-title text-center text-uppercase mb-0">{{ $proyecto->nombre }}</h4>
                 </div>
             </div>
             <!-- Portfolio Modals-->
