@@ -16,17 +16,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/whatsapp.css">
+        <link href="css/template.css" rel="stylesheet" />
         @stack('css')
     </head>
     <body id="page-top">
         <x-navigation-menu/>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        {{-- <header class="masthead bg-primary text-white text-center fondo"> --}}
+        <header class="masthead text-white text-center fondo">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/Carnet.png" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">CODE - FUSION</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Dev - Jhac</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -43,7 +45,7 @@
             <div class="container">
 
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portafolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary">Portafolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -58,10 +60,10 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-secondary text-white mb-0" id="about" style="background-image: url('assets/img/header.png'); background-size: cover; background-position: center;">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">¿QUIEN SOY?</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white tarjeta">¿QUIEN SOY?</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -69,20 +71,26 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">
-                        Me dedico al desarrollo web y la creación de aplicaciones web innovadoras , ayudando a empresas y emprendedores a 
-                        llevar sus ideas al siguiente nivel mediante soluciones digitales personalizadas. 
-                        Desde sitios web modernos y funcionales hasta aplicaciones robustas y escalables, mi objetivo es transformar tus 
-                        necesidades en herramientas tecnológicas que impulsen tu negocio.
-                    </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">
-                        Con experiencia en el uso de las últimas tecnologías y frameworks, diseño y desarrollo proyectos que no solo se ven bien, 
-                        sino que también ofrecen una experiencia de usuario excepcional. Ya sea que necesites un sitio web responsive para capturar 
-                        nuevos clientes, una aplicación web para optimizar procesos internos o 
-                        una plataforma e-commerce para expandir tu alcance, estoy aquí para guiarte en cada paso del proceso.    
-                    </p></div>
-                </div>
+                    <div class="tarjeta">
+                        <div class="row">
+                            <div class="col-lg-4 ms-auto"><p class="lead">
+                                <strong>
+                                    Me dedico al desarrollo web y la creación de aplicaciones web innovadoras , ayudando a empresas y emprendedores a 
+                                llevar sus ideas al siguiente nivel mediante soluciones digitales personalizadas. 
+                                Desde sitios web modernos y funcionales hasta aplicaciones robustas y escalables, mi objetivo es transformar tus 
+                                necesidades en herramientas tecnológicas que impulsen tu negocio.
+                                </strong>
+                            </p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">
+                                <strong>
+                                    Con experiencia en el uso de las últimas tecnologías y frameworks, diseño y desarrollo proyectos que no solo se ven bien, 
+                                    sino que también ofrecen una experiencia de usuario excepcional. Ya sea que necesites un sitio web responsive para capturar 
+                                    nuevos clientes, una aplicación web para optimizar procesos internos o 
+                                    una plataforma e-commerce para expandir tu alcance, estoy aquí para guiarte en cada paso del proceso.  
+                                </strong>
+                            </p></div>
+                        </div>
+                    </div>
                 <!-- About Section Button-->
                 {{-- <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">

@@ -1,11 +1,5 @@
 @extends('layouts.template')
-@push('css')
-    <style>
-        .img-custom {
-        width: 20px;
-        height: auto; /* Mantiene la proporción */
-    }
-    </style>    
+@push('css')   
 @endpush
 @section('content')
     {{-- mostramos datos de prueba --}}
@@ -18,7 +12,7 @@
                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="{{ $proyecto->imagen }}" alt="..." />
+                    <img class="img-fluid portfolio-image" src="{{ $proyecto->imagen }}" alt="..." />
                 </div>
             </div>
             <!-- Portfolio Modals-->
@@ -40,7 +34,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 img-custom" src="{{ $proyecto->imagen }}" alt="..." />
+                                    <img class="img-fluid rounded mb-5 img-custom portfolio-image" src="{{ $proyecto->imagen }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">{{ $proyecto->descripcion }}</p>
                                     <a href="{{ $proyecto->url }}" class="btn btn-primary">
