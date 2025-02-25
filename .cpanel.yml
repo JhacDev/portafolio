@@ -1,0 +1,5 @@
+---
+deployment:
+  trasks:
+      - export DEPLOYPATH=/home/appscodefusion/public_html/
+      - /bin/rsync -av public/ $DEPLOYPATH
